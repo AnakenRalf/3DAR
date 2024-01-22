@@ -5,6 +5,7 @@ module.exports = {
   siteMetadata: {
     title: `3DAR`,
     siteUrl: `https://www.yourdomain.tld`,
+    description: `Ruslan Ausiannikau blog about Architecture Vizualization with Unreal Engine 5`,
   },
   plugins: [
     'gatsby-plugin-styled-components',
@@ -19,6 +20,14 @@ module.exports = {
         path: './src/pages/',
       },
       __key: 'pages',
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: `blog`,
+        path: `${__dirname}/content/blogposts`,
+      },
+      __key: 'blogposts',
     },
   ],
 }
