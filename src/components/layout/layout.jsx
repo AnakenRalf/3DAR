@@ -1,0 +1,93 @@
+import React from 'react'
+import { Link, useStaticQuery, graphql } from 'gatsby'
+import {
+  container,
+  heading,
+  navLinks,
+  navLinkItem,
+  navLinkText,
+  siteTitle,
+} from './layout.module.css'
+
+import { Navigation } from '../Navigation'
+import { Text } from '../Text'
+import { StaticImage } from 'gatsby-plugin-image'
+import { Footer } from '../Footer'
+
+const Layout = ({ pageTitle, children }) => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
+
+  return (
+    // <div className={container}>
+    //   <header className={siteTitle}>{data.site.siteMetadata.title}</header>
+    //   <nav>
+    //     <ul className={navLinks}>
+    //       <li className={navLinkItem}>
+    //         <Link to="/" className={navLinkText}>
+    //           Home
+    //         </Link>
+    //       </li>
+    //       <li className={navLinkItem}>
+    //         <Link to="/blog" className={navLinkText}>
+    //           Blog
+    //         </Link>
+    //       </li>
+    //       <li>
+    //         <Link to="/about" className={navLinkText}>
+    //           About
+    //         </Link>
+    //       </li>
+    //     </ul>
+    //   </nav>
+    //   <main>
+    //     <h1 className={heading}>{pageTitle}</h1>
+    //     {children}
+    //   </main>
+    // </div>
+    <>
+      <div className="bg-blue_gray-800 flex flex-col font-inter gap-10 items-center justify-start mx-auto w-full">
+        <div id="header" className="h-[423px] mx-auto w-full">
+          <StaticImage
+            className="h-[423px] m-auto object-cover w-full"
+            src="../../images/img_rectangle1.png"
+            alt="rectangleOne"
+          />
+          <header className="absolute flex flex-col inset-x-[0] items-center justify-center mx-auto top-[5%] w-full">
+            <div className="flex md:flex-col flex-row md:gap-5 items-center justify-center w-full">
+              <div className="header-row mb-[22px]">
+                <Text
+                  className="sm:text-4xl md:text-[38px] text-[40px] text-gray-200"
+                  size="txtInterBold40"
+                >
+                  3DAR
+                </Text>
+                <div className="mobileMenu hidden md:flex-col">
+                  <div>9</div>
+                  <div>2</div>
+                  <div>3</div>
+                </div>
+              </div>
+
+              <Navigation />
+            </div>
+          </header>
+        </div>
+        <main>
+          <h1 className={heading}>{pageTitle}</h1>
+          {children}
+        </main>
+        <Footer />
+      </div>
+    </>
+  )
+}
+
+export default Layout

@@ -29,5 +29,11 @@ module.exports = {
       },
       __key: 'blogposts',
     },
+    {
+      resolve: `gatsby-plugin-page-creator`,
+      options: {
+        path: `${__dirname}/content/blogposts`,
+      },
+    },
   ],
 }

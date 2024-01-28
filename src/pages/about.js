@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout/layout'
 import { StaticImage } from 'gatsby-plugin-image'
-import Seo from '../components/layout/seo'
+import Seo from '../components/seo/seo'
 
 const AboutPage = () => (
   <Layout pageTitle="About Me">
