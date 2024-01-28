@@ -1,7 +1,9 @@
 
-    @tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root {
   --primary-color: #d9d9d9;
@@ -44,7 +46,7 @@ li:focus-visible{
 }
 
 li:hover{
-  cursor: pointer;
+  cursor: default;
 }
 
 .tab-panel--selected { animation-name: tabPanel; animation-duration: 300ms; animation-timing-function: linear; }

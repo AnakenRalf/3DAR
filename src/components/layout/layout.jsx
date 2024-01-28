@@ -26,32 +26,6 @@ const Layout = ({ pageTitle, children }) => {
   `)
 
   return (
-    // <div className={container}>
-    //   <header className={siteTitle}>{data.site.siteMetadata.title}</header>
-    //   <nav>
-    //     <ul className={navLinks}>
-    //       <li className={navLinkItem}>
-    //         <Link to="/" className={navLinkText}>
-    //           Home
-    //         </Link>
-    //       </li>
-    //       <li className={navLinkItem}>
-    //         <Link to="/blog" className={navLinkText}>
-    //           Blog
-    //         </Link>
-    //       </li>
-    //       <li>
-    //         <Link to="/about" className={navLinkText}>
-    //           About
-    //         </Link>
-    //       </li>
-    //     </ul>
-    //   </nav>
-    //   <main>
-    //     <h1 className={heading}>{pageTitle}</h1>
-    //     {children}
-    //   </main>
-    // </div>
     <>
       <div className="bg-blue_gray-800 flex flex-col font-inter gap-10 items-center justify-start mx-auto w-full">
         <div id="header" className="h-[423px] mx-auto w-full">
@@ -67,7 +41,7 @@ const Layout = ({ pageTitle, children }) => {
                   className="sm:text-4xl md:text-[38px] text-[40px] text-gray-200"
                   size="txtInterBold40"
                 >
-                  3DAR
+                  <Link to="/">3DAR</Link>
                 </Text>
                 <div className="mobileMenu hidden md:flex-col">
                   <div>9</div>
@@ -80,7 +54,7 @@ const Layout = ({ pageTitle, children }) => {
             </div>
           </header>
         </div>
-        <main>
+        <main className="m-auto w-[60%] mt-[-90px] z-10">
           <h1 className={heading}>{pageTitle}</h1>
           {children}
         </main>

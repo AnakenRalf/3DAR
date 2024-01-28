@@ -21,13 +21,13 @@ const Navigation = () => {
             <Link to="/about">About</Link>
           </Button>
         </div>
-        <Link to="https://www.instagram.com/anakenr/">
+        <a href="https://www.instagram.com/anakenr/">
           <StaticImage
             className="h-6 w-6 "
             src="../../images/img_bxlinstagramsvg.svg"
             alt="Instagram navigation link"
           />
-        </Link>
+        </a>
       </div>
     </div>
   )

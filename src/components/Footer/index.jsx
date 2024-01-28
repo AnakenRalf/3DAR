@@ -1,6 +1,5 @@
 import React from 'react'
 
-import { Text } from '../Text'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'
 
@@ -8,71 +7,57 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 md:px-5 w-full py-10">
       <div className="grid grid-cols-3 px-2  m-auto w-[60%]">
-        <ul className="flex flex-col gap-3  mb-16 md:w-full">
+        <ul className="font-Inter flex flex-col gap-3  text-sm text-white-A700">
           <li>
-            <a href="#" className="text-sm text-white-A700">
-              <Text size="txtInterRegular14">
-                <Link to="/">Home</Link>
-              </Text>
-            </a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="#" className="text-sm text-white-A700">
-              <Text size="txtInterRegular14">
-                <Link to="/blog">Posts</Link>
-              </Text>
-            </a>
+            <Link to="/blog">Posts</Link>
           </li>
           <li>
-            <a href="#" className="text-sm text-white-A700">
-              <Text size="txtInterRegular14">
-                <Link to="/about">About</Link>
-              </Text>
-            </a>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <a href="#" className="text-sm text-white-A700">
-              <Text size="txtInterRegular14">
-                <Link to="/links">Links</Link>
-              </Text>
-            </a>
+            <Link to="/links">Links</Link>
           </li>
         </ul>
+
         <div className="col-start-3 col-end-4 flex flex-col  gap-[11px] items-end pt-10">
           <div className="flex flex-row gap-[11px] items-start justify-between ">
             <div className="flex flex-col h-6 items-center justify-start w-6">
-              <Link to="https://www.instagram.com/anakenr/">
+              <a href="https://www.instagram.com/anakenr/">
                 <StaticImage
                   className="h-6 w-6"
                   src="../../images/img_bxltwittersvg.svg"
                   alt="bxltwittersvg"
                 />
-              </Link>
+              </a>
             </div>
             <div className="flex flex-col h-6 items-center justify-start w-6">
-              <Link to="https://www.instagram.com/anakenr/">
+              <a href="https://www.instagram.com/anakenr/">
                 <StaticImage
                   className="h-6 w-6"
                   src="../../images/img_bxllinkedinsquaresvg.svg"
                   alt="bxllinkedinsqua"
                 />
-              </Link>
+              </a>
             </div>
-            <Link to="https://www.instagram.com/anakenr/">
+            <a href="https://www.instagram.com/anakenr/">
               <StaticImage
                 className="h-6 w-6"
                 src="../../images/img_bxlinstagramsvg.svg"
                 alt="bxlinstagramsvg_One"
               />
-            </Link>
+            </a>
           </div>
         </div>
-        <Text
+        <p
           className="col-start-2 col-end-3 text-[11px] text-white-A700  md:w-full"
           size="txtInterRegular11"
         >
-          (C) 2024 3DAR blog by Ruslan Ausiannikau. Powered by Gatsby.
-        </Text>
+          (C) 2024 3DAR blog by Ruslan Ausiannikau.
+          <br /> Powered by Gatsby.
+        </p>
       </div>
     </footer>
   )

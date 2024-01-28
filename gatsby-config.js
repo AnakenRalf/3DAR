@@ -36,5 +36,13 @@ module.exports = {
         path: `${__dirname}/content/blogposts`,
       },
     },
+    // {
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     name: 'images',
+    //     path: `${__dirname}/content/blogposts`, // Adjust the path to your MDX folder
+    //     ignore: ['**/*.mdx'], // Ignore MDX files to avoid duplicate nodes
+    //   },
+    // },
   ],
 }
