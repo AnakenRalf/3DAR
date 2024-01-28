@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk_3dar=self.webpackChunk_3dar||[]).push([[678],{6558:function(e,t,n){n.r(t),n.d(t,{Head:function(){return i}});var a=n(7294),r=n(9821),s=n(3785);const c={marginBottom:48};t.default=()=>a.createElement(r.Z,{pageTitle:"This is my BLOG about Unreal Engine 5"},a.createElement("p",{style:c},"Let's make this! "));const i=()=>a.createElement(s.Z,{title:"Home 3DAR"})}}]);
+//# sourceMappingURL=component---src-pages-index-js-4546d9dc52dfd1661377.js.map

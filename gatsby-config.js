@@ -2,9 +2,10 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
+  pathPrefix: '/3DAR',
   siteMetadata: {
     title: `3DAR`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://anakenralf.github.io`,
     description: `Ruslan Ausiannikau blog about Architecture Vizualization with Unreal Engine 5`,
   },
   plugins: [
