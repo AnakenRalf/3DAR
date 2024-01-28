@@ -71,7 +71,7 @@ const Footer = () => {
           className="col-start-2 col-end-3 text-[11px] text-white-A700  md:w-full"
           size="txtInterRegular11"
         >
-          (C) 2024 3DAR blog by Ruslan Ausiannikau
+          (C) 2024 3DAR blog by Ruslan Ausiannikau. Powered by Gatsby.
         </Text>
       </div>
     </footer>
