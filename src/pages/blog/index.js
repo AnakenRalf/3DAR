@@ -15,8 +15,8 @@ const BlogPage = ({ data }) => {
         <article key={node.id} className="bg-gray-200_02 p-3 gap-10 my-5 mx-5">
           <ListItem
             id={node.id}
-            imgAlt="rectangleNine"
-            imgSrc={`/images/${node.frontmatter.coverimage}`}
+            imgAlt={node.frontmatter.altTextCoverImage}
+            imgSrc={`../images/${node.frontmatter.coverimage}`}
             slug={node.frontmatter.slug}
             title={node.frontmatter.title}
             tags={node.frontmatter.tags}
@@ -40,6 +40,7 @@ export const query = graphql`
           tags
           shortdescription
           coverimage
+          altTextCoverImage
         }
         id
         excerpt

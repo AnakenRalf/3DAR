@@ -20,12 +20,14 @@ const CurrentMainPost = ({ data }) => {
           alt="rectangleEight"
         />
         <div className="flex flex-col items-start justify-start">
-          <h1
-            className="md:text-3xl sm:text-[28px] text-[32px] text-black-900_01 w-full"
-            size="txtInterRegular32"
-          >
-            {currentData.frontmatter.title}
-          </h1>
+          <Link to={currentData.frontmatter.slug}>
+            <h1
+              className="md:text-3xl sm:text-[28px] text-[32px] text-black-900_01 w-full"
+              size="txtInterRegular32"
+            >
+              {currentData.frontmatter.title}
+            </h1>
+          </Link>
           <div
             id="tags"
             className="pt-5 flex flex-row gap-4 items-center justify-start  md:w-full"
