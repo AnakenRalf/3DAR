@@ -1,13 +1,5 @@
 import React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
-import {
-  container,
-  heading,
-  navLinks,
-  navLinkItem,
-  navLinkText,
-  siteTitle,
-} from './layout.module.css'
 
 import { Navigation } from '../Navigation'
 import { Text } from '../Text'

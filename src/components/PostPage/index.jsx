@@ -1,7 +1,5 @@
 import React from 'react'
 import { StyledFrame } from './postpage.styles'
-import { Tag } from '../Tag'
-import { StaticImage } from 'gatsby-plugin-image'
 
 const PostPage = ({ data, children }) => {
   return (
