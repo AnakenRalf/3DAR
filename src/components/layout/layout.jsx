@@ -31,7 +31,7 @@ const Layout = ({ pageTitle, children }) => {
         <div id="header" className="h-[423px] mx-auto w-full">
           <StaticImage
             className="h-[423px] m-auto object-cover w-full"
-            src="../../images/img_rectangle1.png"
+            src="../../images/cozy-place-wide.png"
             alt="rectangleOne"
           />
           <header className="absolute flex flex-col inset-x-[0] items-center justify-center mx-auto top-[5%] w-full">
@@ -54,8 +54,8 @@ const Layout = ({ pageTitle, children }) => {
             </div>
           </header>
         </div>
-        <main className="m-auto w-[60%] mt-[-90px] z-10">
-          <h1 className={heading}>{pageTitle}</h1>
+        <main className=" w-[60%] mt-[-90px] z-10 md:flex-col">
+          <h1>{pageTitle}</h1>
           {children}
         </main>
         <Footer />

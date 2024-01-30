@@ -4,7 +4,6 @@ import { Tag } from '../Tag'
 import { StaticImage } from 'gatsby-plugin-image'
 
 const PostPage = ({ data, children }) => {
-  console.log(data.mdx.frontmatter.tags)
   return (
     <>
       <div className="bg-[#f8f8f8] mt-[-30px]">

@@ -5,6 +5,7 @@ export const StyledFrame = styled.div`
   height: 379px;
   padding: 14px;
   margin: 30px auto;
+  letter-spacing: -0.016em;
 
   width: 824px;
 
@@ -37,7 +38,7 @@ export const StyledFrame = styled.div`
     font-family: 'Inter-Bold', Helvetica;
     font-size: 32px;
     font-weight: 700;
-    letter-spacing: 0;
+
     line-height: normal;
 
     @media (max-width: 768px) {

@@ -17,30 +17,41 @@ const StyledFrame = styled.div`
   background-color: #f8f8f8;
 
   & h1 {
-    font-size: 2rem;
+    font-weight: bold;
+    font-size: 2.2rem;
     padding: 0.5rem;
     text-indent: 30px;
   }
 
   & h2 {
     font-size: 2rem;
+    font-weight: bold;
     margin-top: 0.5rem;
     padding: 0.5rem;
     text-indent: 30px;
   }
   & h3 {
     font-size: 1.5rem;
-
+    font-weight: bold;
     padding: 0.5rem;
     text-indent: 30px;
   }
-  & p {
-    font-size: 1rem;
-
+  & p,
+  ol {
+    font-size: 1.3rem;
     padding: 0.5rem;
     text-align: justify;
     text-indent: 30px;
-    letter-spacing: 1px;
+    letter-spacing: -0.016em;
+  }
+  & ol {
+    font-size: 1rem;
+    list-style-type: decimal;
+    list-style-position: inside;
+  }
+  & li {
+    line-height: 1.5rem;
+    font-size: 1.1rem;
   }
 `
 
